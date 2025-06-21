@@ -1,0 +1,82 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Portofolio</title>
+</head>
+
+
+<body>
+  <div class="container">
+
+    <a href="index.php" class="back-button">Terug naar Home</a>
+
+    <h2>Mijn Persoonlijke Vaardigheden</h2>
+
+    
+    <button class="accordion">Feedback Thijs</button>
+    <div class="panel">
+      <iframe src="Portofolio Thijs bestanden/Feedback Thijs.docx.pdf" frameborder="0" width="100%" height="600px"></iframe>></iframe>
+    </div>
+
+    <button class="accordion">POP</button>
+    <div class="panel">
+      <iframe src="Portofolio Thijs bestanden/Persoonlijk ontwikkelingsplan opleiding Informatica Thijs Arkes periode1.4.pdf" frameborder="0" width="100%" height="600px"></iframe>></iframe>
+    </div>
+
+    <button class="accordion">Presentatie Wayfindr</button>
+    <div>
+        <iframe src="Portofolio Thijs bestanden/Wayfinder Final presentatie.pdf" frameborder="0" width="100%" height="600px"></iframe>
+    </div>
+
+    <button class="accordion">Technisch Ontwerp Periode 3</button>
+    <div>
+        <iframe src="Portofolio Thijs bestanden/Technisch Ontwerp 1.3.docx" frameborder="0" width="100%" height="600px"></iframe>
+    </div>
+
+    <button class="accordion"></button>
+    <div>
+        <iframe src="Portofolio Thijs bestanden/Technisch-Adviesrapport_EvilAi-inator.docx" frameborder="0" width="100%" height="600px"></iframe>
+    </div>
+
+    <button class="accordion"></button>
+    <div>
+        <iframe src="Portofolio Thijs bestanden/Plan van Aanpak (Tweede versie).docx" frameborder="0" width="100%" height="600px"></iframeborder="0" width="100%" height="600px"></iframe>
+    </div>
+    
+    <button class="accordion"></button>
+    <div>
+        <iframe src="" frameborder="0" width="100%" height="600px"></iframe>
+    </div>
+   
+   
+   
+   
+
+
+
+
+   <script>
+   var acc = document.getElementsByClassName("accordion");
+   var i;
+
+   for (i = 0; i < acc.length; i++) {
+   acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+    });
+   }
+   </script>
+  </div>
+   
+
+</body>
+</html>

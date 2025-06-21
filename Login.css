@@ -1,0 +1,152 @@
+/* Algemene opmaak */
+/* Algemene opmaak */
+body {
+    font-family: Arial, sans-serif; /* Normale lettertype */
+    margin: 0;
+    padding: 0;
+    background-image: url('Images/IMG_5189.jpg'); /* Achtergrondafbeelding instellen */
+    background-size: cover; /* Zorgt ervoor dat de afbeelding het volledige scherm bedekt */
+    background-position: center; /* Centreert de afbeelding */
+    background-attachment: fixed; /* Zorgt ervoor dat de afbeelding blijft vastzitten tijdens het scrollen */
+}
+
+
+/* Header */
+header {
+    background-color: #e74c3c; /* Rood voor de header */
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 40px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+/* Login container */
+.login-container {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    padding: 40px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.login-container h2 {
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Input velden */
+input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 1em;
+}
+
+input:focus {
+    border-color: #3498db; /* Blauwe randkleur wanneer het inputveld in focus is */
+    outline: none;
+}
+
+/* Knop */
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #f39c12; /* Oranje voor de knop */
+    border: none;
+    border-radius: 4px;
+    color: white;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #e67e22; /* Donkerder oranje voor hover-effect */
+}
+
+/* Error message */
+#error-message {
+    color: red;
+    font-size: 0.9em;
+}
+
+/* Footer */
+footer {
+    background-color: #3498db; /* Blauw voor de footer */
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+footer p {
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 30px; /* Ruimte tussen de boxen */
+    flex-wrap: wrap; /* Zorgt ervoor dat de boxen onder elkaar komen bij kleine schermen */
+    margin-top: 50px;
+}
+
+/* Stijl voor zowel login als about container */
+.login-container, .about-container {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    padding: 40px;
+    text-align: center;
+}
+
+/* Titel in beide boxen */
+.login-container h2, .about-container h2 {
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* About button */
+.about-button {
+    display: inline-block;
+    background-color: #3498db;
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.about-button:hover {
+    background-color: #2980b9;
+}
+
+/* Responsive weergave */
+@media (max-width: 850px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.about-container
+{
+    background-color: #e67e22;
+}
+
